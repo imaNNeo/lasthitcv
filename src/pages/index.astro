@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import ResumeEditor from '../components/ResumeEditor';
+---
+
+<Base>
+  <ResumeEditor client:only="react">
+    <p slot="fallback" style="padding:24px;font-family:sans-serif;color:#5e5e5e;">
+      Loading the editor…
+    </p>
+  </ResumeEditor>
+</Base>

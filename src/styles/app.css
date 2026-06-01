@@ -1,0 +1,247 @@
+:root {
+  --bg: #f3f2ef;
+  --panel: #ffffff;
+  --border: #e3e3e0;
+  --text: #1d1d1f;
+  --muted: #5e5e5e;
+  --accent: #0a66c2;
+  --accent-soft: #eaf2fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* --- App shell ------------------------------------------------------------ */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+.brand {
+  font-weight: 700;
+  font-size: 18px;
+  margin-right: auto;
+}
+.brand-accent {
+  color: var(--accent);
+}
+.toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.toolbar button {
+  font: inherit;
+  font-size: 13px;
+  padding: 7px 12px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #fff;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.toolbar button.ghost {
+  background: transparent;
+  color: var(--accent);
+}
+.toolbar button:hover {
+  filter: brightness(0.95);
+}
+.save-error {
+  color: #b42318;
+  font-size: 12px;
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: minmax(360px, 460px) 1fr;
+  flex: 1;
+  min-height: 0;
+}
+.pane {
+  height: 100%;
+  overflow: auto;
+}
+.form-pane {
+  padding: 16px;
+  background: var(--panel);
+  border-right: 1px solid var(--border);
+}
+.preview-pane {
+  padding: 0;
+  display: flex;
+  background: #525659; /* PDF viewer backdrop */
+}
+.pdf-frame {
+  flex: 1;
+  border: 0;
+}
+.pdf-status {
+  margin: auto;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* --- Form ----------------------------------------------------------------- */
+.group {
+  margin-bottom: 22px;
+}
+.group-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin: 0 0 10px;
+}
+.field {
+  display: block;
+  margin-bottom: 10px;
+}
+.field-label {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.field input,
+.field textarea,
+.logo-input-row input,
+.string-list-row input {
+  width: 100%;
+  font: inherit;
+  font-size: 13px;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+}
+.field textarea {
+  resize: vertical;
+}
+.field input:focus,
+.field textarea:focus,
+.logo-input-row input:focus,
+.string-list-row input:focus {
+  outline: 2px solid var(--accent-soft);
+  border-color: var(--accent);
+}
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: #fcfcfb;
+}
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.link-btn {
+  font: inherit;
+  font-size: 12px;
+  border: none;
+  background: none;
+  color: var(--accent);
+  cursor: pointer;
+  padding: 2px 4px;
+}
+.add-btn {
+  font: inherit;
+  font-size: 13px;
+  border: 1px dashed var(--border);
+  background: #fff;
+  color: var(--accent);
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.add-btn.block {
+  width: 100%;
+}
+
+.logo-input {
+  margin-bottom: 10px;
+}
+.logo-input-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.logo-input-row input {
+  flex: 1;
+}
+.logo-input-row button {
+  font: inherit;
+  font-size: 12px;
+  padding: 7px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.logo-thumb {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #fff;
+  flex: none;
+}
+.logo-thumb.placeholder {
+  background: repeating-linear-gradient(45deg, #f0f0ef, #f0f0ef 4px, #e7e7e4 4px, #e7e7e4 8px);
+}
+
+.string-list-row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.string-list-row input {
+  flex: 1;
+}
+
+/* --- Responsive ----------------------------------------------------------- */
+@media (max-width: 880px) {
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+  .form-pane {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "fullName": "Daniel Mercer",
+  "location": "Amsterdam, Netherlands",
+  "email": "daniel.mercer@gmail.com",
+  "linkedIn": "linkedin.com/in/danielmercer",
+  "github": "github.com/danielmercer",
+  "summary": "Senior Android engineer with 10+ years building and scaling consumer mobile apps. I care about clean architecture, app performance, and a fast, reliable release process, and I enjoy taking features from rough product ideas to polished, well-tested releases. Experienced leading projects end-to-end and mentoring engineers in cross-functional teams.",
+  "experience": [
+    {
+      "company": "Pinecone Pay",
+      "companyLogo": null,
+      "position": "Senior Android Engineer",
+      "startDate": "Sep 2025",
+      "endDate": "Present",
+      "summary": [
+        "Lead Android development for a consumer banking app with several hundred thousand monthly active users, owning architecture decisions and release quality across a small team.",
+        "Shipped a redesigned onboarding flow that lifted signup completion by 18% through faster screens, clearer validation, and fewer steps.",
+        "Drove an incremental migration to Jetpack Compose, replacing legacy XML screens without slowing the release cadence."
+      ]
+    },
+    {
+      "company": "Northwind Labs",
+      "companyLogo": null,
+      "position": "Android Engineer",
+      "startDate": "Jul 2023",
+      "endDate": "Aug 2025",
+      "summary": [
+        "Built core features for a B2B field-service app, working closely with design and backend to ship dependable offline support.",
+        "Introduced a modular architecture and a shared component library, cutting feature build time and keeping screens consistent.",
+        "Set up CI/CD with Fastlane and automated Play Store releases, reducing release effort from hours to minutes."
+      ]
+    },
+    {
+      "company": "Atlas Mobility",
+      "companyLogo": null,
+      "position": "Senior Android Developer",
+      "startDate": "May 2018",
+      "endDate": "Nov 2022",
+      "summary": [
+        "Owned the rider-facing Android app end-to-end, from architecture through store releases, across several major versions.",
+        "Improved cold-start time by roughly 40% and raised crash-free sessions to 99.7% through profiling and targeted refactors.",
+        "Led the team's migration from Java to Kotlin and from RxJava to Coroutines over about 18 months.",
+        "Designed a real-time trip-tracking layer with efficient location updates and graceful handling of poor connectivity.",
+        "Added unit and Espresso UI tests for critical flows, raising coverage and noticeably reducing regressions.",
+        "Improved accessibility across the app, including TalkBack support, larger touch targets, and better contrast.",
+        "Mentored two junior engineers and helped establish the team's code-review and release standards."
+      ]
+    },
+    {
+      "company": "Brightline Studio",
+      "companyLogo": null,
+      "position": "Android Developer",
+      "startDate": "Jun 2017",
+      "endDate": "May 2018",
+      "summary": [
+        "Developed several client Android apps with a focus on smooth, responsive interfaces.",
+        "Built reusable custom UI components that were adopted across multiple projects."
+      ]
+    },
+    {
+      "company": "Vantage Apps",
+      "companyLogo": null,
+      "position": "Android Developer",
+      "startDate": "Oct 2015",
+      "endDate": "Jun 2017",
+      "summary": [
+        "Delivered Android apps for e-commerce and media clients on tight timelines.",
+        "Created a configurable app template that let the team spin up branded builds quickly.",
+        "Adopted the MVP pattern and improved the testability and modularity of shared code."
+      ]
+    },
+    {
+      "company": "Helix",
+      "companyLogo": null,
+      "position": "Android Developer Intern",
+      "startDate": "Jun 2015",
+      "endDate": "Oct 2015",
+      "summary": [
+        "Implemented small features and fixed bugs in a production Android app under mentorship.",
+        "Learned Git and professional version-control and code-review workflows."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "schoolName": "Technical University of Berlin",
+      "schoolLogo": null,
+      "degree": "Bachelor of Science",
+      "field": "Computer Science",
+      "startDate": "2011",
+      "endDate": "2015"
+    }
+  ],
+  "skills": [
+    "Kotlin",
+    "Java",
+    "Jetpack Compose",
+    "Coroutines / Flow",
+    "Android SDK",
+    "MVVM / MVI",
+    "Clean Architecture",
+    "Hilt / Dagger",
+    "Retrofit / OkHttp",
+    "Room / SQLite",
+    "Unit & Espresso Testing",
+    "CI/CD (Fastlane)",
+    "Git"
+  ],
+  "honorsAndAwards": [
+    {
+      "title": "1st Place - Mobile Apps Hackathon",
+      "date": "Nov 2021",
+      "info": ""
+    },
+    {
+      "title": "Finalist - European Android Challenge",
+      "date": "May 2019",
+      "info": ""
+    },
+    {
+      "title": "Speaker - Droidcon Berlin",
+      "date": "Sep 2022",
+      "info": ""
+    }
+  ]
+}
