@@ -4,7 +4,8 @@ import react from '@astrojs/react';
 // Local-first resume builder. The editor is a client-only React island;
 // the surrounding Astro pages stay static for SEO.
 export default defineConfig({
-  site: 'https://lasthitcv.com',
+  site: 'https://imaNNeo.github.io',
+  base: '/lasthitcv',
   integrations: [react()],
   vite: {
     // @react-pdf/renderer references `global` in its browser bundle.
