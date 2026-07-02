@@ -38,8 +38,8 @@ npm run build    # static site in dist/ — deploy to Cloudflare Pages / Vercel 
 ## PDF fidelity — the most important rule
 
 `ResumeDocument.tsx` must stay a faithful port of the original Dart generator. **Source of
-truth:** the Dart project at `/Users/neo/IdeaProjects/linkedin_like_resume_generator` (it uses
-the Dart `pdf` package; layout lives in `lib/`). When you touch the PDF, match the Dart code
+truth:** the original Dart project (the `linkedin_like_resume_generator` repo — set
+`$DART_REPO` to wherever you cloned it). It uses the Dart `pdf` package; layout lives in `lib/`. When you touch the PDF, match the Dart code
 exactly. All units are **PDF points**.
 
 Current matched values (from commit `5e8bce3` — a deliberately compact layout):
@@ -78,7 +78,8 @@ sips -s format png /tmp/lasthit_sample.pdf --out /tmp/new.png   # then view /tmp
 
 Ground truth: in the Dart repo run `dart run` (regenerates `example.pdf`), then `sips` it to PNG
 and compare. `render-full.tsx` renders the Dart repo's own `bin/data.json` for an apples-to-apples
-diff. (`dart` is at `/Users/neo/Dev/flutter/bin/dart`.)
+diff — pass the path as an argument: `node dist/_render_full.mjs "$DART_REPO/bin/data.json"`.
+(Assumes `dart` is on your `PATH`.)
 
 ## Roadmap
 

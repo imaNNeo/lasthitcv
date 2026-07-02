@@ -3,6 +3,8 @@
   "type": "module",
   "version": "0.1.0",
   "private": true,
+  "description": "A free, local-first resume builder with a live PDF preview and PDF/JSON export.",
+  "license": "MIT",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",

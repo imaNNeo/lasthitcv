@@ -41,3 +41,7 @@ src/
 - Phase 1 (this): local-first editor, PDF/JSON export. ✅
 - Phase 2: Kotlin (Ktor) API — Postgres `jsonb` sync + R2 image hosting.
 - Phase 3: Google sign-in, cross-device sync, shareable public CV pages.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
